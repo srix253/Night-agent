@@ -1,0 +1,14 @@
+night_shift:
+  start: "22:00"
+  end: "06:00"
+
+monitoring:
+  interval_minutes: 5
+  eta_grace_minutes: 15
+
+retry:
+  enabled: true
+  max_attempts: 2
+  retryable_errors:
+    - "CONNECTION_TIMEOUT"
+    - "TEMPORARY_NETWORK_ERROR"
